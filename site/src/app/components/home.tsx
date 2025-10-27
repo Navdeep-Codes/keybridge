@@ -5,5 +5,17 @@ const bitcountMono = Bitcount_Grid_Single({
 });
 
 export default function Main() {
-  return <div className="flex-1 bg-red-200">hai</div>;
+  return (
+    <div className="flex-1 flex justify-center items-center flex-col gap-9 px-4">
+      <p className={`${bitcountMono.className} text-9xl`}>keybridge</p>
+      <p className="text-center text-balance">
+        keybridgekeybridgekeybridgekeybridge
+        keybridgekeybridgekeybridgekeybridge
+        keybridgekeybridgekeybridgekeybridge
+        keybridgekeybridgekeybridgekeybridgekeybridgekeybridgekeybridge
+        keybridgekeybridge
+        keybridgekeybridgekeybridgekeybridgekeybridgekeybridgekeybridgekeybridgekeybridgekeybridgekeybridgekeybridgekeybridgekeybridgekeybridge
+      </p>
+    </div>
+  );
 }
