@@ -6,15 +6,11 @@ const bitcountMono = Bitcount_Grid_Single({
 
 export default function Main() {
   return (
-    <div className="flex-1 flex justify-center items-center flex-col gap-9 px-4">
+    <div className="flex-1 flex justify-center items-center flex-col gap-9 px-4 bg-black">
       <p className={`${bitcountMono.className} text-9xl`}>keybridge</p>
       <p className="text-center text-balance">
-        keybridgekeybridgekeybridgekeybridge
-        keybridgekeybridgekeybridgekeybridge
-        keybridgekeybridgekeybridgekeybridge
-        keybridgekeybridgekeybridgekeybridgekeybridgekeybridgekeybridge
-        keybridgekeybridge
-        keybridgekeybridgekeybridgekeybridgekeybridgekeybridgekeybridgekeybridgekeybridgekeybridgekeybridgekeybridgekeybridgekeybridgekeybridge
+        Make something which uses yubikeys in a creative way and get a
+        yubikey.{" "}
       </p>
     </div>
   );
