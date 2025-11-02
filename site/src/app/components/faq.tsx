@@ -5,6 +5,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Bitcount_Grid_Single } from "next/font/google";
+
 const bitcountMono = Bitcount_Grid_Single({
   subsets: ["latin"],
   weight: ["400"],
@@ -12,30 +13,69 @@ const bitcountMono = Bitcount_Grid_Single({
 
 export default function Faq() {
   return (
-    <div className="max-w-full min-h-screen flex items-center justify-center flex-col">
-      <p className={`${bitcountMono.className} text-9xl`}>FAQs</p>
-      <div className="bg-black p-8">
-        <Accordion type="single" collapsible className="text-white w-full">
-          <AccordionItem value="item-1">
-            <AccordionTrigger>What is this YSWS?</AccordionTrigger>
-            <AccordionContent className="flex flex-col gap-4 text-balance">
-              make smth related to yubikeys..... put text here navdeep
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-2">
-            <AccordionTrigger>What is a yubikey?</AccordionTrigger>
-            <AccordionContent className="flex flex-col gap-4 text-balance">
-              yubikeys..... put text here navdeep
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-3">
-            <AccordionTrigger>What is this hackclub?</AccordionTrigger>
-            <AccordionContent className="flex flex-col gap-4 text-balance">
-              put text here navdeep
-            </AccordionContent>
-          </AccordionItem>
-          {/*add more items here if needed*/}
-        </Accordion>
+    <div className="min-h-screen from-gray-50 to-white">
+      {/* Title Section */}
+      <div className="flex items-center justify-center py-16 px-4">
+        <h1
+          className={`${bitcountMono.className} text-6xl md:text-8xl lg:text-9xl text-gray-900 text-center`}
+        >
+          FAQs
+        </h1>
+      </div>
+
+      {/* Accordion Section */}
+      <div className="max-w-4xl mx-auto px-4 pb-16">
+        <div className="bg-black rounded-2xl shadow-2xl overflow-hidden">
+          <div className="p-8 md:p-12">
+            <Accordion type="single" collapsible className="w-full space-y-4">
+              <AccordionItem
+                value="item-1"
+                className="border border-gray-700 rounded-xl bg-gray-900 hover:bg-gray-800 transition-colors duration-200"
+              >
+                <AccordionTrigger className="px-6 py-4 text-white hover:text-gray-200 text-left font-medium text-lg [&[data-state=open]>svg]:rotate-180">
+                  What is this YSWS?
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-6 pt-2 text-gray-300 text-base leading-relaxed max-w-none overflow-hidden">
+                  <div className="space-y-4">
+                    <p>
+                      make smth related to yubikeys..... put text here navdeep
+                    </p>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem
+                value="item-2"
+                className="border border-gray-700 rounded-xl bg-gray-900 hover:bg-gray-800 transition-colors duration-200"
+              >
+                <AccordionTrigger className="px-6 py-4 text-white hover:text-gray-200 text-left font-medium text-lg [&[data-state=open]>svg]:rotate-180">
+                  What is a yubikey?
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-6 pt-2 text-gray-300 text-base leading-relaxed max-w-none overflow-hidden">
+                  <div className="space-y-4">
+                    <p>yubikeys..... put text here navdeep</p>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem
+                value="item-3"
+                className="border border-gray-700 rounded-xl bg-gray-900 hover:bg-gray-800 transition-colors duration-200"
+              >
+                <AccordionTrigger className="px-6 py-4 text-white hover:text-gray-200 text-left font-medium text-lg [&[data-state=open]>svg]:rotate-180">
+                  What is this hackclub?
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-6 pt-2 text-gray-300 text-base leading-relaxed max-w-none overflow-hidden">
+                  <div className="space-y-4">
+                    <p>put text here navdeep</p>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              {/* Add more items here if needed */}
+            </Accordion>
+          </div>
+        </div>
       </div>
     </div>
   );

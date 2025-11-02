@@ -9,8 +9,8 @@ export default function Main() {
     <div className="min-h-screen flex-1 flex justify-center items-center flex-col gap-9 px-4 bg-black text-white">
       <p className={`${bitcountMono.className} text-9xl`}>keybridge</p>
       <p className="text-center text-balance">
-        Make something which uses yubikeys in a creative way and get a
-        yubikey.{" "}
+        Make something which uses yubikeys in a creative way and get a yubikey
+        to test it.
       </p>
     </div>
   );
