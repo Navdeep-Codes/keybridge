@@ -22,12 +22,12 @@ export default function Navbar() {
               About
             </p>
           </Link>
-          <Link href={"#services"}>
+          <Link href={"https://en.wikipedia.org/wiki/YubiKey"}>
             <p className="text-lg hover:underline transition-all duration-200">
               Yubikey
             </p>
           </Link>
-          <Link href={"#contact"}>
+          <Link href={"#faq"}>
             <p className="text-lg hover:underline transition-all duration-200">
               FAQs
             </p>
