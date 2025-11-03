@@ -13,7 +13,7 @@ const bitcountMono = Bitcount_Grid_Single({
 
 export default function Faq() {
   return (
-    <div className="min-h-screen bg-black">
+    <div id="faq" className="min-h-screen bg-black">
       <div className="flex items-center justify-center py-16 px-4">
         <h1
           className={`${bitcountMono.className} text-6xl md:text-8xl lg:text-9xl text-white hover:text-shadow-white text-center`}
