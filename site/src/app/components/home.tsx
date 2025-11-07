@@ -1,3 +1,4 @@
+"use client"
 import { Bitcount_Grid_Single } from "next/font/google";
 import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
